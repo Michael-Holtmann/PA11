@@ -1,0 +1,1 @@
+INDEX VERSION 1.134+H:\APCSA\PA11\PA 11 - Selection Sort TEMPLATE (23-24)\.metadata\.plugins\org.eclipse.jdt.core
