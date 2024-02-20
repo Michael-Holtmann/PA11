@@ -26,22 +26,20 @@ public class SelectionSort2
         System.out.println();
     }
     
-    public static void selectionSort( String[] x )
-    {        
-    	String largest = "";
-    	int largestIndex = 0;
-    	String control = "";
-    	for (int i = x.length-1; i > 0; i--) {
-    		control = x[i];
-    		for (int j = 0; j < i; j++) {
-    			if (x[j].compareTo(control) >= 1) {
-    				largest  = x[j];
-    				largestIndex = j;
-    			}
-    		}
-    		x[i] = largest;
-    		x[largestIndex] = control;    		
-    	}
+  public static void selectionSort(String[] x) {
+    int largestIndex = 0;
+    String temp = "";
+    for (int i = x.length - 1; i > 0; i--) {
+      temp = x[i];
+      largestIndex = i;
+      for (int j = 0; j < i; j++) {
+        if (x[j].compareTo(x[largestIndex]) > 0) {
+          largestIndex = j;
+        }
+      }
+      x[i] = x[largestIndex];
+      x[largestIndex] = temp;
     }
+  }
     
 }
