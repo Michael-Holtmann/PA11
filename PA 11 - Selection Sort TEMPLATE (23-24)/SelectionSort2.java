@@ -39,7 +39,12 @@ public class SelectionSort2
       }
       x[i] = x[largestIndex];
       x[largestIndex] = temp;
+
+      System.out.println("Pass " + (x.length - i) + ":");
+      printArray(x);
+      System.out.println("\n");
     }
+    
   }
     
 }
